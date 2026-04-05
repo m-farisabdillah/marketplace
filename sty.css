@@ -1,0 +1,264 @@
+:root {
+  --maincolor: red;
+  --scolor: #424769;
+  --acolor: #eaeaea;
+}
+
+html body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--acolor);
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--maincolor);
+}
+
+header .top {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-red {
+  display: flex;
+  width: 90px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+}
+
+header .top h2 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+}
+
+nav .slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+nav .banner {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .banner img {
+  width: 100%;
+}
+
+nav .store {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border-radius: 7px;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .store img {
+  width: 70px;
+  border-radius: 100px;
+  border: solid 2px;
+}
+
+nav .store .name h2 {
+  margin: 0;
+}
+
+nav .desk {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+nav .desk div {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .desk div p {
+  width: 100%;
+  max-width: 900px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+article table tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+article table tr {
+  display: flex;
+  flex-direction: column;
+  border: solid 0px;
+  border-radius: 20px;
+  padding: 7px;
+  background-color: #f3f3f3;
+}
+
+article table tr td img {
+  width: 150px;
+  border-radius: 12px 12px 0 0;
+  z-index: -50;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  height: auto;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.contact .cct {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact .cct a {
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 2px 2px 2px black;
+}
+
+button img {
+  width: 30px;
+}
+
+button h3 {
+  color: #eaeaea;
+  text-shadow: 3px 2px 1px black;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.7s ease;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 7px;
+  justify-content: center;
+  background-color: var(--maincolor);
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 430px) {
+  .top h2 {
+    font-size: medium;
+    width: auto;
+  }
+  .top .btn {
+    padding-top: 5px;
+  }
+  button {
+    width: 300px;
+  }
+  .container {
+    width: 95%;
+  }
+  nav .desk div p {
+    width: 93%;
+    font-size: small;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header .top h2 {
+    margin-left: 10px;
+  }
+  .container {
+    width: 95%;
+  }
+  nav .desk div p {
+    width: 93%;
+    text-align: justify;
+  }
+}

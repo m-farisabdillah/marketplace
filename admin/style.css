@@ -1,0 +1,195 @@
+:root {
+    --maincolor : red;
+    --scolor :#424769;
+    --acolor :#eaeaea;
+}
+
+html body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+form table {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    max-height: 300px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+form table .login {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+form table .login th {
+    width: auto;
+    font-size: xx-large;
+}
+
+form table .user {
+    width: 100%;
+    height: 30%;
+    padding-top: 10px;
+    align-items: center;
+}
+
+form table .user td {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: x-large;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+form table .user td input {
+    width: 90%;
+    height: 30px;
+}
+
+form table .masuk {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+form table .masuk td {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: x-large;
+    font-weight: bold;
+    justify-content: center;
+}
+
+form table .masuk td input {
+    width: 90%;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: red;
+}
+
+form table tr {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dasbord Admin */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+}
+
+header .top {
+    width: 100%;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+header .top h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 5px 25px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: 10px;
+    
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+tbody tr td img {
+    width: 70px;
+}
+
+.btn-red {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    
+}
+
+.box {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80vh;
+}
+
+.box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+}
+
+.box form .input {
+    width: 90%;
+    height: 40px;
+}
+
